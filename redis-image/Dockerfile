@@ -1,6 +1,7 @@
 # Use existing docker image as base
 # This is like installing an OS in a machine.
 FROM alpine
+# Downloads alpine image
 
 # Download and install dependency
 # apk is apache package manager installed in alpine OS.
@@ -15,3 +16,5 @@ RUN apk add --update redis
 # Then creates an image of the container, which is the final built image.
 # Terminates the intermediate container.
 CMD ["redis-server"]
+
+# Image created in the above step is the final image
