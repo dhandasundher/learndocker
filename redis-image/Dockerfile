@@ -17,4 +17,4 @@ RUN apk add --update redis
 # Terminates the intermediate container.
 CMD ["redis-server"]
 
-# Image created in the above step is the final image
+# Image created in the above step is the final image  
